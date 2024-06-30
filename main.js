@@ -1,8 +1,14 @@
-const header = document.querySelector("header");
+document.addEventListener('DOMContentLoaded', (event) => {
+    const buttons = document.querySelectorAll('.btn-warning');
 
-window.addEventListener("scroll",function(){
-    header.classList.toggle("sticky",this.window.scrollY > 60)
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Thank you for your interest! More information will be available soon.');
+        });
+    });
 });
+
+
 
 
 
